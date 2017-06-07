@@ -1,1 +1,1 @@
-console.log("hellllloooo");
+window.onload = function() {console.log("hellllloooo")};
