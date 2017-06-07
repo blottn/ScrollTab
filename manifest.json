@@ -5,11 +5,10 @@
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
   "content_scripts": [{
-	"matches": ["http://*/*"],
-	"js": ["scroll.js"]
+    "matches": ["http://*/*"], 
+    "js": ["scroll.js"]
   }],
   "permissions": [
-	"tabs",
-    "<all_urls>"
+	"tabs"
   ]
 }
