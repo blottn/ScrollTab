@@ -4,10 +4,10 @@
   "name": "Getting started example",
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
-  "content_scripts": [{
-    "matches": ["http://*/*"], 
-    "js": ["scroll.js"]
-  }],
+  "background": {
+    "scripts": ["scroll.js"],
+    "persistent": false
+  },
   "permissions": [
 	"tabs"
   ]
