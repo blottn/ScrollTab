@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "icon48":"icon.png",
+  "icons":{"48":"icon.png"},
   "name": "ScrollTab widget",
   "description": "This extension scrolls the titles of long chrome tab names",
   "version": "1.0",
