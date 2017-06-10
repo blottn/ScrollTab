@@ -9,6 +9,8 @@
     "persistent": false
   },
   "permissions": [
-	"tabs"
+	"tabs",
+	"http://*/",
+	"https://*/"
   ]
 }
