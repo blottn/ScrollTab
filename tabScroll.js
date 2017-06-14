@@ -1,1 +1,4 @@
-console.log("this is executed from a tab?");
+console.log(document.getElementsByTagName("title")[0].innerHTML);
+
+
+
