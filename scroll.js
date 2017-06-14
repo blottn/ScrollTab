@@ -11,7 +11,7 @@ setInterval( function() {
             chrome.tabs.executeScript(parseInt(id), details);
         }
     });
-}, 2000);
+}, 600);
 
 
 //TODO set tab creation event which adds a space to the title
