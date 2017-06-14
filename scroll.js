@@ -14,4 +14,11 @@ setInterval( function() {
 }, 600);
 
 
-//TODO set tab creation event which adds a space to the title
+//TODO set tab creation event which adds a space to the title and marks a tab as scrollable
+
+chrome.tabs.onCreated.addListener( new function(tab) {
+    script_details = {
+        "file": "tabAdded.js"
+    };
+    chrome.tabs.executeScript(tab.id, script_details);
+});
