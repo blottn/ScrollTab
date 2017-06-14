@@ -1,8 +1,3 @@
-/*window.onload = function() {
-    chrome.tabs.getCurrent( function(tab) {
-        console.log(tab);
-    });
-};*/
 setInterval( function() {
     var empty_query = {};
     chrome.tabs.query(empty_query, function(all_tabs) {
@@ -17,3 +12,6 @@ setInterval( function() {
         }
     });
 }, 2000);
+
+
+//TODO set tab creation event which adds a space to the title

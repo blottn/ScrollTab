@@ -1,1 +1,3 @@
-console.log("this is executed from a tab?");
+var title = document.getElementsByTagName("title")[0].innerHTML;
+title = title.substring(1,title.length) + title[0];
+
