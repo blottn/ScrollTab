@@ -18,11 +18,18 @@ setInterval( function() {
 
 //add space to end of title when a tab is updated and/or a tab is created
 
-chrome.tabs.onCreated.addListener( function(new_tab) {
+/*chrome.tabs.onCreated.addListener( function(new_tab) {
     script_details = {
         "file": "tabAdded.js"
     };
     chrome.tabs.executeScript(new_tab.id, script_details);
-});
+});*/
 
+chrome.tabs.onCreated.addListener(inject_script);
 
+function inject_script(tab) {
+    script_details = {
+        "file": "space_content_script.js"
+    };
+    chrome.tabs.executeScript(tab.id, script_details);
+}
