@@ -1,5 +1,17 @@
+var ready_tabs = [];
+
 setInterval( function() {
-    var empty_query = {};
+
+    for (var i = 0 ; i < ready_tabs.length ; i++) {
+        var id = ready_tabs[i];
+
+        var details = {
+            "file": "tabScroll.js"
+        };
+        chrome.tabs.executeScript(id, details);
+    }
+
+/*    var empty_query = {};
     chrome.tabs.query(empty_query, function(all_tabs) {
         for (var i = 0 ; i < all_tabs.length ; i++) {
             
@@ -12,7 +24,7 @@ setInterval( function() {
                 chrome.tabs.executeScript(parseInt(id), details);
             }
         }
-    });
+    });*/
 }, 600);
 
 
