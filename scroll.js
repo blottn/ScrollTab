@@ -1,4 +1,4 @@
-var ready_tabs = [];
+var ready_tabs = [];    //should probably change to a map?
 
 setInterval( function() {
 
